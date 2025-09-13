@@ -1,0 +1,297 @@
+<!-- Header Wrapper (فيه الخلفية المتدرجة) -->
+<div class="header-wrapper">
+
+  <!-- Top-bar -->
+  <div class="top-bar text-white py-1 w-100 " [ngClass]="{'hidden': topBarHidden}">
+    <!-- Desktop container -->
+    <div class="d-none d-md-flex container2 d-flex justify-content-between align-items-center">
+      <div class="contact-links d-flex gap-3 align-items-center">
+        <a href="#" class="text-white text-decoration-none" routerLink="/" fragment="contact">اتصل بنا</a>
+        <a href="#" class="text-white text-decoration-none" routerLink="/" fragment="footer">الإعتمادات</a>
+        <a href="#" class="text-white text-decoration-none" routerLink="/" fragment="Why-Choose">لماذا تختارنا؟</a>
+      </div>
+      <div class="social-icons d-flex gap-3 me-xxl-5">
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Mobile container -->
+    <div class="d-flex d-md-none flex-column justify-content-center align-items-center gap-2 px-3">
+      <div class="contact-links d-flex gap-3 flex-wrap justify-content-center w-100 text-center">
+        <a href="#" class="text-white" routerLink="/" fragment="contact">اتصل بنا</a>
+        <a href="#" class="text-white text-decoration-none" routerLink="/" fragment="footer">الإعتمادات</a>
+        <a href="#" class="text-white" routerLink="/" fragment="Why-Choose">لماذا تختارنا؟</a>
+      </div>
+      <div class="phone-social d-flex justify-content-center align-items-center gap-3 w-100 mt-1">
+        <div class="social-icons d-flex gap-2">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar container -->
+  <div class="navbar-container" [ngClass]="{'top-bar-hidden': topBarHidden, 'navbar-scrolled': scrolled}">
+    <nav class="navbar navbar-expand-lg bg-transparent" dir="rtl">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+
+        <!-- Mobile logo -->
+        <a routerLink="/home" class="navbar-brand d-flex d-lg-none align-items-center gap-2">
+          <img src="assets/images/LOGO-removebg-preview.webp" alt="Law Experts Logo" class="logo-img" />
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+          aria-controls="mobileNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop menu -->
+        <div class="d-none d-lg-flex align-items-center justify-content-center w-100 gap-4">
+          <a routerLink="/home" class="navbar-brand d-flex align-items-center gap-2 ">
+            <img src="assets/images/LOGO-removebg-preview.webp" alt="Law Experts Logo" class="logo-img" />
+          </a>
+          <ul class="navbar-nav flex-row gap-4 mb-0">
+            <li class="nav-item"><a routerLink="/home" class="nav-link fw-medium text-white">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link fw-medium text-white" routerLink="/" fragment="about">من نحن</a>
+            </li>
+            <!-- Dropdown الماجستير -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-medium text-white" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="programs">
+                برامج الماجستير
+              </a>
+              <ul class="dropdown-menu text-start dropdown-columns">
+                <div class="row">
+                  <div class="col-md-7">
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+                        الأعمال التنفيذي</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        القيادة وإدارة التغيير</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        استراتيجيات الأعمال الرقمية</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        الإدارة المالية التنفيذية</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        إدارة
+                        العمليات وسلاسل الإمداد العالمية</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        التسويق الاستراتيجي وبناء العلامات التجارية</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        إدارة
+                        المواهب والقيادة</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+                        علوم
+                        البيانات للمديرين التنفيذيين</a></li>
+                  </div>
+                  <div class="col-md-5">
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+                        المشاريع</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+                        المخاطر</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير
+                        العلاقات
+                        العامة</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير
+                        التقنية
+                        المالية</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الأمن
+                        السيبراني</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الذكاء
+                        الاصطناعي</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير
+                        الإعلام
+                        الرقمي</a></li>
+                    <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير
+                        الإدارة
+                        الصحية</a></li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <!-- Dropdown الدكتوراه -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-medium text-white" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="programsPHD">
+                برامج الدكتوراه
+              </a>
+              <ul class="dropdown-menu text-start dropdown-columns">
+                <div class="row">
+                  <div class="col-md-6">
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        إدارة
+                        الأعمال</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        القيادة الاستراتيجية</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        التحول الرقمي</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        الإدارة</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        تقنية
+                        المعلومات</a></li>
+                  </div>
+                  <div class="col-md-6">
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        الإعلام الرقمي</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        التسويق</a></li>
+                    <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i> دكتوراه في
+                        الموارد البشرية</a></li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <!-- Dropdown المهنية -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-medium text-white" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="diploma">
+                البرامج المهنية
+              </a>
+              <ul class="dropdown-menu text-start dropdown-columns dropdown-menu-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="ms-3 title-program">البرامج المهنية الأكثر طلباً</p>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> دبلوم إدارة
+                        الأعمال المصغر (Mini-MBA)</a></li>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> دبلوم التسويق
+                        الرقمي المتكامل</a></li>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> دبلوم إدارة
+                        الموارد البشرية</a></li>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="ms-3 title-program">الشهادات الاحترافية</p>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> مدير المشاريع
+                        المحترف (PMP)</a></li>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> تحليل الأعمال
+                        المعتمد (CBAP)</a></li>
+                    <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i> القيادة
+                        والتأثير</a></li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link fw-medium text-white" routerLink="/" fragment="knowledge">مصادر
+                معرفية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" dir="rtl" aria-labelledby="mobileNavLabel">
+  <div class="offcanvas-header">
+    <h5 id="mobileNavLabel" class="offcanvas-title text-white fw-semibold">القائمة</h5>
+    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <ul class="navbar-nav flex-column gap-1 align-items-end text-start w-100 px-3">
+      <li class="nav-item w-100">
+        <a routerLink="/home" class="nav-link text-white w-100" data-bs-dismiss="offcanvas">الرئيسية</a>
+      </li>
+      <li class="nav-item w-100"><a class="nav-link fw-medium text-white" routerLink="/" fragment="about">من نحن</a>
+      </li>
+      <li class="nav-item dropdown w-100">
+        <a class="nav-link nav-title dropdown-toggle text-white w-100" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="programs">برامج
+          الماجستير</a>
+        <ul class="dropdown-menu dropdown-menu-end text-start w-100">
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+              الأعمال التنفيذي</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+              القيادة وإدارة التغيير</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+              استراتيجيات الأعمال الرقمية</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+              الإدارة المالية التنفيذية</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في إدارة
+              العمليات وسلاسل الإمداد العالمية</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في
+              التسويق الاستراتيجي وبناء العلامات التجارية</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في إدارة
+              المواهب والقيادة</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير في علوم
+              البيانات للمديرين التنفيذيين</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+              المشاريع</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير إدارة
+              المخاطر</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير العلاقات
+              العامة</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير التقنية
+              المالية</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الأمن
+              السيبراني</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الذكاء
+              الاصطناعي</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الإعلام
+              الرقمي</a></li>
+          <li><a routerLink="/" fragment="programs" class="dropdown-item"><i class="fa fa-angle-left"></i> ماجستير الإدارة
+              الصحية</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown w-100">
+        <a class="nav-link dropdown-toggle text-white w-100" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="programsPHD">برامج الدكتوراه</a>
+        <ul class="dropdown-menu dropdown-menu-end text-start w-100">
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في إدارة الأعمال
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في القيادة
+              الاستراتيجية
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في التحول الرقمي
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في الإدارة
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في تقنية
+              المعلومات
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في الإعلام الرقمي
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في التسويق
+            </a></li>
+          <li><a routerLink="/" fragment="programsPHD" class="dropdown-item"><i class="fa fa-angle-left"></i>دكتوراه في الموارد
+              البشرية
+            </a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown w-100">
+        <a class="nav-link dropdown-toggle text-white w-100" role="button" data-bs-toggle="dropdown" routerLink="/" fragment="diploma">البرامج المهنية</a>
+        <ul class="dropdown-menu dropdown-menu-end text-start w-100">
+          <p class="ms-3 title-program">البرامج المهنية الأكثر طلباً</p>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>دبلوم إدارة الأعمال
+              المصغر (Mini-MBA)
+            </a></li>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>دبلوم التسويق الرقمي
+              المتكامل
+            </a></li>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>دبلوم إدارة الموارد
+              البشرية
+            </a></li>
+          <p class="ms-3 title-program mt-md-5">الشهادات الاحترافية</p>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>مدير المشاريع
+              المحترف (PMP)
+            </a></li>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>تحليل الأعمال
+              المعتمد (CBAP)
+            </a></li>
+          <li><a routerLink="/" fragment="diploma" class="dropdown-item"><i class="fa fa-angle-left"></i>القيادة والتأثير
+            </a></li>
+        </ul>
+      </li>
+      <li class="nav-item w-100"><a class="nav-link fw-medium text-white" routerLink="/" fragment="knowledge">مصادر
+          معرفية</a>
+      </li>
+    </ul>
+  </div>
+</div>

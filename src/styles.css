@@ -1,0 +1,62 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 70% !important;
+}
+
+:root{
+    --font: "Poppins", sans-serif;
+}
+
+body{
+     direction: rtl;
+  text-align: right;
+  font-family: 'Cairo', sans-serif; 
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+
+/* global */
+@media (max-width: 1200px) {
+    .container{
+        width: 100% !important;
+    }
+}
+
+/* تخصيص Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* عرض الشريط */
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* خلفية المسار */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #002D62, #002D62, #002D62); /* تدرج أزرق */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #002D62, #002D62, #002D62); /* أغمق عند الهوفر */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #002D62 rgba(255,255,255,0.8); /* اللون + خلفية */
+}

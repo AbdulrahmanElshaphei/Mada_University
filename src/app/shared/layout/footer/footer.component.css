@@ -1,0 +1,228 @@
+/* Start Footer */
+.footer {
+    background-image: linear-gradient(rgba(0, 45, 98, 0.7), rgba(0, 45, 98, 0.7)), url(../../../../assets/images/shadows-made-by-daylight-city-with-architecture.webp);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #19223a;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.container-footer {
+    --gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: var(--gap);
+}
+
+.container-footer :is(.left1, .right3) {
+    width: calc(calc(100% - var(--gap)) *2 / 4);
+}
+
+.container-footer :is(.middle2) {
+    width: calc(calc(100% - var(--gap)) *2 / 2);
+}
+
+.content-left1 {
+    display: flex;
+    align-items: center;
+}
+
+.content-left1 img {
+    width: 60%;
+    margin: auto;
+}
+
+.content-left1 h2 {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.content-left1 h2::after {
+    content: ".";
+    color: #CE1212;
+}
+
+.left1 p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #ababb6;
+}
+
+.left1 h3 {
+    font-size: 18.72px;
+    text-align: center;
+    padding: 10px 0;
+    color: #ababb6;
+    border-bottom: 2px solid #fff;
+    margin: 0.625rem 0;
+}
+
+.icons-left1 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.icons-left1 a {
+    list-style: none;
+    color: #ababb6;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons-left1 a:hover {
+    color: #C29F47;
+}
+
+.icons-left1 ul li {
+    list-style: none;
+}
+
+.subcribe-box h3 {
+    font-size: 18.72px;
+}
+
+.form-middle2 {
+    --gap: 0.5rem;
+    display: flex;
+    gap: var(--gap);
+    margin: 15px 0;
+}
+
+.quick-Links h3 {
+    font-size: 18.72px;
+    margin: 10px 0;
+}
+
+.quick-Links ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.quick-Links ul {
+    --gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.quick-Links ul li {
+    width: calc(calc(100% - var(--gap)) / 2);
+    padding: 4px;
+    transition: 400ms;
+}
+
+.quick-Links ul li:hover {
+    transform: translateX(5%);
+    background-color: rgba(255,255,255,0.2);
+}
+
+.quick-Links ul li::before {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: #ababb6;
+}
+
+.quick-Links ul li a {
+    text-decoration: none;
+    color: #ababb6;
+    font-size: 16px;
+}
+
+/* ✅ تعديل صور الاعتمادات */
+.logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-box img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ ضبط right3 */
+.right3 h3 {
+    font-size: 18.72px;
+    margin-bottom: 15px;
+}
+
+.right3 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.right3 ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.right3 ul li .fas {
+    color: #ababb6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right3 ul li a,
+.right3 ul li span {
+    color: #ababb6;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* End Footer */
+
+
+/* Start Responsive */
+@media (max-width: 1200px) {
+    .container-footer {
+        flex-wrap: wrap;
+    }
+
+    .middle2 {
+        order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container-footer :is(.left1, .right3, .middle2) {
+        width: 100%;
+    }
+
+    .middle2 {
+        order: 0;
+    }
+
+    .logos {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+
+/* End Footer */

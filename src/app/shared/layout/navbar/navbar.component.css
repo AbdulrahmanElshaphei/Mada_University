@@ -1,0 +1,283 @@
+/* ================================
+   إعدادات عامة للهيدر والـ Gradient
+   ================================ */
+
+/* متغيرات للتحكم في ارتفاعات الهيدر */
+:root {
+  --header-topbar-h: 30px;
+  /* ارتفاع الـ Top-bar */
+  --header-navbar-h: 70px;
+  /* ارتفاع الـ Navbar (اللوجو + اللينكات) */
+}
+
+/* على الموبايل بنقلل شوية ارتفاع الناف */
+@media (max-width: 767px) {
+  :root {
+    --header-navbar-h: 60px;
+  }
+}
+
+/* ==== Wrapper يغطي Top-bar + Navbar بخلفية واحدة ==== */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  margin: 0 !important;
+  padding: env(safe-area-inset-top) 0 0 0;
+  padding: constant(safe-area-inset-top) 0 0 0;
+  z-index: 1030;
+  background: linear-gradient(to bottom,
+      rgba(40, 80, 150, 0.95) 0%,
+      /* أفتح */
+      rgba(40, 80, 150, 0.85) 35%,
+      rgba(40, 80, 150, 0.65) 65%,
+      rgba(40, 80, 150, 0) 100%);
+  box-sizing: border-box;
+}
+
+.header-wrapper .container,
+.header-wrapper .container-fluid {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+.container2{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ========== Top-bar ========== */
+.top-bar {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
+
+.top-bar.hidden {
+  display: none;
+}
+
+/* ========== Navbar ========== */
+.navbar-container {
+  width: 100%;
+  transition: top 0.3s ease;
+}
+
+.navbar {
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.title-program {
+  color: #006C35;
+}
+
+
+.logo-img {
+  height: 68px;
+  width: 100%;
+}
+
+.navbar-nav {
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 20px;
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  text-align: right;
+  direction: rtl;
+  min-width: 320px;
+  white-space: normal;
+}
+
+/* Offcanvas */
+.offcanvas {
+  z-index: 1100 !important;
+  width: 80% !important;
+  max-width: 80%;
+  background: linear-gradient(to bottom,
+      rgba(40, 80, 150, 0.95) 0%,
+      /* أفتح */
+      rgba(40, 80, 150, 0.85) 35%,
+      rgba(40, 80, 150, 0.65) 65%,
+      rgba(40, 80, 150, 0) 100%);
+  color: #fff;
+}
+
+.offcanvas-backdrop {
+  background-color: rgba(0, 45, 98, 0.7);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 .25rem #C29F47;
+  border: none;
+}
+
+.navbar-toggler {
+  border-color: #C29F47 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23C29F47' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Buttons */
+.color-button-home {
+  background-color: #C29F47;
+  border: transparent;
+  transition: 0.3s all ease-in-out;
+  color: #fff;
+}
+
+.color-button-home:hover {
+  background-color: #fff;
+  color: #C29F47;
+}
+
+/* ========== Responsive tweaks ========== */
+@media (max-width: 1199.98px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .navbar-nav {
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+
+  .navbar-nav {
+    gap: 0.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 2rem;
+  }
+}
+
+/* موبايل */
+@media (max-width: 767px) {
+  .header-wrapper {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+
+  .top-bar {
+    height: var(--header-topbar-h);
+    padding: 0 10px;
+  }
+
+  .navbar-container {
+    width: 100% !important;
+  }
+
+  .navbar {
+    margin-top: 0 !important;
+  }
+}
+
+/* ========== Dropdown بأعمدة ========== */
+.dropdown-menu.dropdown-columns {
+  width: 650px;
+  padding: 20px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .row {
+  margin: 0;
+}
+
+.dropdown-menu .col-md-6,
+.dropdown-menu .col-md-7,
+.dropdown-menu .col-md-5 {
+  padding: 0 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 8px 10px;
+  white-space: normal;
+}
+
+.dropdown-item i {
+  margin-left: 8px;
+  color: #006C35;
+  font-size: 14px;
+}
+
+.dropdown-menu-center {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* ✅ حل مشكلة التاكل على الشاشات المتوسطة */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .dropdown-menu.dropdown-columns {
+    width: 70vw !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* 🎯 استثناء البرامج المهنية */
+  .dropdown-menu.dropdown-columns.dropdown-menu-center {
+    width: 70vw !important;
+    left: 5% !important;
+    transform: none !important;
+  }
+}
+
+.social-icons a i {
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+  color: #C29F47;
+}
+
+/* ================================
+   سيب مساحة للمحتوى اللي بعد الهيدر
+   ================================ */
+.header-wrapper+* {
+  padding-top: calc(var(--header-topbar-h) + var(--header-navbar-h) + env(safe-area-inset-top));
+  padding-top: calc(var(--header-topbar-h) + var(--header-navbar-h) + constant(safe-area-inset-top));
+}
