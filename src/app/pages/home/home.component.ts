@@ -290,10 +290,10 @@ export class HomeComponent {
     }
 
     emailjs.send(
-      'service_4cz9yvl',
-      'template_h2r7kho',
+      'service_5ehd6gz',
+      'template_4mgu01y',
       this.formData,
-      '57pj8qlkDabVqp8kH'
+      'dk9EoYtRjergB12KQ'
     ).then(() => {
       this.toastr.success('تم إرسال رسالتك بنجاح ✅');
       this.formData = { name: '', email: '', phone: '', message: '' };
