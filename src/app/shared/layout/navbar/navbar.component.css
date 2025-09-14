@@ -95,7 +95,8 @@
 
 .logo-img {
   height: 68px;
-  width: 100%;
+  width: auto;
+  max-width: 150px;
 }
 
 .navbar-nav {
@@ -208,21 +209,21 @@
 
 /* ✅ تعديل خاص للشاشات الأقل من 286px */
 @media (max-width: 286px) {
-  .navbar .container-xl,
-  .navbar .container,
-  .navbar .container-fluid {
+  .mobile-header {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
     flex-wrap: nowrap !important;
+    width: 100% !important;
   }
 
   .logo-img {
-    height: 50px;
-    width: auto;
+    height: 45px;
+    max-width: 120px;
   }
 
   .navbar-toggler {
+    flex-shrink: 0;
     margin-left: 5px;
   }
 }
