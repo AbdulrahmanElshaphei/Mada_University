@@ -207,6 +207,25 @@
   }
 }
 
+/* ✅ من أول ما تظهر نسخة الموبايل (أقل من lg) */
+@media (max-width: 991.98px) {
+  .navbar .container-xl {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .logo-img {
+    height: 55px;
+    width: auto;
+    margin-right: 0; /* إلغاء المسافة الإضافية */
+  }
+
+  .navbar-toggler {
+    margin-left: 0; 
+  }
+}
+
 /* ✅ تعديل خاص للشاشات الأقل من 286px */
 @media (max-width: 286px) {
   .mobile-header {
@@ -220,11 +239,12 @@
   .logo-img {
     height: 45px;
     max-width: 120px;
+    margin-right: 0; /* برضه متساوي */
   }
 
   .navbar-toggler {
     flex-shrink: 0;
-    margin-left: 5px;
+    margin-left: 0;
   }
 }
 
