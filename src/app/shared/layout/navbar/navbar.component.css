@@ -5,19 +5,16 @@
 /* متغيرات للتحكم في ارتفاعات الهيدر */
 :root {
   --header-topbar-h: 30px;
-  /* ارتفاع الـ Top-bar */
   --header-navbar-h: 70px;
-  /* ارتفاع الـ Navbar (اللوجو + اللينكات) */
 }
 
-/* على الموبايل بنقلل شوية ارتفاع الناف */
 @media (max-width: 767px) {
   :root {
     --header-navbar-h: 60px;
   }
 }
 
-/* ==== Wrapper يغطي Top-bar + Navbar بخلفية واحدة ==== */
+/* ==== Wrapper يغطي Top-bar + Navbar ==== */
 .header-wrapper {
   position: fixed;
   top: 0;
@@ -28,12 +25,13 @@
   padding: env(safe-area-inset-top) 0 0 0;
   padding: constant(safe-area-inset-top) 0 0 0;
   z-index: 1030;
-  background: linear-gradient(to bottom,
-      rgba(40, 80, 150, 0.95) 0%,
-      /* أفتح */
-      rgba(40, 80, 150, 0.85) 35%,
-      rgba(40, 80, 150, 0.65) 65%,
-      rgba(40, 80, 150, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 80, 150, 0.95) 0%,
+    rgba(40, 80, 150, 0.85) 35%,
+    rgba(40, 80, 150, 0.65) 65%,
+    rgba(40, 80, 150, 0) 100%
+  );
   box-sizing: border-box;
 }
 
@@ -47,7 +45,7 @@
   width: 100% !important;
 }
 
-.container2{
+.container2 {
   width: 80%;
   margin: 0 auto;
 }
@@ -95,7 +93,6 @@
   color: #006C35;
 }
 
-
 .logo-img {
   height: 68px;
   width: 100%;
@@ -122,12 +119,13 @@
   z-index: 1100 !important;
   width: 80% !important;
   max-width: 80%;
-  background: linear-gradient(to bottom,
-      rgba(40, 80, 150, 0.95) 0%,
-      /* أفتح */
-      rgba(40, 80, 150, 0.85) 35%,
-      rgba(40, 80, 150, 0.65) 65%,
-      rgba(40, 80, 150, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 80, 150, 0.95) 0%,
+    rgba(40, 80, 150, 0.85) 35%,
+    rgba(40, 80, 150, 0.65) 65%,
+    rgba(40, 80, 150, 0) 100%
+  );
   color: #fff;
 }
 
@@ -166,7 +164,6 @@
   .navbar-nav .nav-link {
     font-size: 16px;
   }
-
   .navbar-nav {
     gap: 1rem !important;
   }
@@ -176,7 +173,6 @@
   .navbar-nav .nav-link {
     font-size: 15px;
   }
-
   .navbar-nav {
     gap: 0.5rem !important;
   }
@@ -207,6 +203,27 @@
 
   .navbar {
     margin-top: 0 !important;
+  }
+}
+
+/* ✅ تعديل خاص للشاشات الأقل من 286px */
+@media (max-width: 286px) {
+  .navbar .container-xl,
+  .navbar .container,
+  .navbar .container-fluid {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: auto;
+  }
+
+  .navbar-toggler {
+    margin-left: 5px;
   }
 }
 
