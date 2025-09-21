@@ -290,7 +290,7 @@ export class HomeComponent {
     }
 
     emailjs.send(
-      'service_tnuxoom',
+      'service_5ehd6gz',
       'template_4mgu01y',
       this.formData,
       'dk9EoYtRjergB12KQ'

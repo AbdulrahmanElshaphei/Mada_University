@@ -10,22 +10,22 @@
             <div class="icons-left1">
                 <ul>
                     <li>
-                        <a href="">
+                        <a>
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a (click)="openLinkedin()">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a>
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a>
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
@@ -34,45 +34,93 @@
         </div>
         <div class="middle2">
             <div class="subcribe-box">
-                <h3>الاعتمادات الدولية والشركاء</h3>
+                <h3>بعض الاعتمادات الدولية والشركاء</h3>
             </div>
             <div class="logos d-flex justify-content-start flex-wrap py-2">
                 <div class="logo-box">
-                    <img src="assets/images/A0AEC0.svg" alt="IIBA" class="w-75" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-EOEA">
+                        <title id="title-EOEA">EOEA</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle" dominant-baseline="middle">EOEA</text>
+                    </svg>
+
+
                 </div>
                 <div class="logo-box">
-                    <img src="assets/images/A0AEC0 (1).svg" alt="PMI" class="w-75" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-IACBE">
+                        <title id="title-IACBE">IACBE</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle"
+                            dominant-baseline="middle">IACBE</text>
+                    </svg>
+
                 </div>
                 <div class="logo-box">
-                    <img src="assets/images/A0AEC0 (2).svg" alt="EQUIS" class="w-75"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-ACOHE">
+                        <title id="title-ACOHE">ACOHE</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle"
+                            dominant-baseline="middle">ACOHE</text>
+                    </svg>
+
                 </div>
                 <div class="logo-box">
-                    <img src="assets/images/A0AEC0 (3).svg" alt="AMBA" class="w-75"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-IECN">
+                        <title id="title-IECN">IECN</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle" dominant-baseline="middle">IECN</text>
+                    </svg>
+
                 </div>
                 <div class="logo-box">
-                    <img src="assets/images/A0AEC0 (4).svg" alt="AACSB" class="w-75"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-UKEQM">
+                        <title id="title-UKEQM">UKEQM</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle"
+                            dominant-baseline="middle">UKEQM</text>
+                    </svg>
+
+                </div>
+                <div class="logo-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="45" viewBox="0 0 112.5 45" role="img"
+                        aria-labelledby="title-CPD">
+                        <title id="title-CPD">CPD</title>
+                        <rect width="112.5" height="45" fill="#F7FAFC" rx="6" ry="6" />
+                        <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="24"
+                            font-weight="700" fill="#A0AEC0" text-anchor="middle" dominant-baseline="middle">CPD</text>
+                    </svg>
                 </div>
             </div>
             <div class="quick-Links">
                 <h3>الروابط السريعة</h3>
                 <ul>
                     <li routerLink="/home">
-                        <a >الرئيسية</a>
+                        <a>الرئيسية</a>
                     </li>
                     <li routerLink="/" fragment="about">
-                        <a >من نحن</a>
+                        <a>من نحن</a>
                     </li>
                     <li routerLink="/" fragment="programs">
-                        <a >برامج الماجستير</a>
+                        <a>برامج الماجستير</a>
                     </li>
                     <li routerLink="/" fragment="programsPHD">
-                        <a >برامج الدكتوراه</a>
+                        <a>برامج الدكتوراه</a>
                     </li>
                     <li routerLink="/" fragment="diploma">
-                        <a >البرامج المهنية</a>
+                        <a>البرامج المهنية</a>
                     </li>
                     <li routerLink="/" fragment="knowledge">
-                        <a >مصادر معرفية</a>
+                        <a>مصادر معرفية</a>
                     </li>
                 </ul>
             </div>
@@ -85,12 +133,12 @@
                     <span>Suite 45, 125 High Holborn London, WC1V 6JJ United Kingdom</span>
                 </li>
                 <li>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:contact@example.com">info&#64;madauniversity.eu</a>
-                </li>
-                <li>
                     <i class="fas fa-phone-alt"></i>
                     <a href="tel:+1 5589 55488 55">201157063829+</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:contact@example.com">universitymada&#64;gmail.com</a>
                 </li>
             </ul>
         </div>

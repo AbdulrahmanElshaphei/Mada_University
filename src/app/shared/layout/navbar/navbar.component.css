@@ -68,6 +68,7 @@
 .top-bar a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .top-bar a:hover {

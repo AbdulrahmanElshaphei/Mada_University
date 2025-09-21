@@ -72,6 +72,7 @@
     color: #ababb6;
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .icons-left1 a:hover {
@@ -149,14 +150,14 @@
     align-items: center;
 }
 
-.logo-box img {
+.logo-box svg {
     max-width: 100%;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-box img:hover {
+.logo-box svg:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }

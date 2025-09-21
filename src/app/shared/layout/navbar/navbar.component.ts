@@ -30,4 +30,10 @@ export class NavbarComponent {
 
     this.lastScrollTop = st <= 0 ? 0 : st; // للوقاية من الأرقام السالبة
   }
+
+
+
+  openLinkedin() {
+    window.open('https://www.linkedin.com/in/mada-university-155b36384/', '_blank');
+  }
 }

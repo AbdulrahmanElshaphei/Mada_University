@@ -9,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  openLinkedin() {
+    window.open('https://www.linkedin.com/in/mada-university-155b36384/', '_blank');
+  }
 }

@@ -1,0 +1,89 @@
+.text-content {
+  padding: 100px 0;
+  /* background-color: #eeeff0; */
+  background-image: linear-gradient(rgba(0, 45, 98, 0.65), rgba(0, 45, 98, 0.65)), url(../../../assets/images/shadows-made-by-daylight-city-with-architecture.webp);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.About-content p {
+  font-size: 18px;
+}
+
+.Aboutus {
+  position: relative;
+  color: #009447;
+}
+
+.Aboutus::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  font-size: 2em;
+  opacity: .1;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.About-content hr {
+  width: 40px;
+  border-top: 2px solid #009447;
+  margin: 0 auto 20px;
+  transition: all .3s;
+  margin-top: 20px;
+}
+
+.About-content:hover hr {
+  width: 80px;
+}
+
+.team-section {
+  padding: 130px 0 0 0;
+}
+
+.team-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+}
+
+.team-name {
+  background: #002D62;
+  /* كحلي غامق */
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.text-edit {
+  color: #009447;
+  font-size: 30px;
+}
+
+@media (max-width: 575px) {
+  .team-card img {
+
+    height: 360px;
+
+  }
+
+  .team-section {
+    padding: 190px 0 0 0;
+  }
+}

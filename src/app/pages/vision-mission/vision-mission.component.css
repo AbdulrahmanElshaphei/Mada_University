@@ -1,0 +1,112 @@
+.text-content {
+  padding: 100px 0;
+  /* background-color: #eeeff0; */
+  background-image: linear-gradient(rgba(0, 45, 98, 0.65), rgba(0, 45, 98, 0.65)), url(../../../assets/images/shadows-made-by-daylight-city-with-architecture.webp);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.About-content p {
+  font-size: 18px;
+}
+
+.Aboutus {
+  position: relative;
+  color: #009447;
+}
+
+.Aboutus::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  font-size: 2em;
+  opacity: .1;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.About-content hr {
+  width: 40px;
+  border-top: 2px solid #009447;
+  margin: 0 auto 20px;
+  transition: all .3s;
+  margin-top: 20px;
+}
+
+.About-content:hover hr {
+  width: 80px;
+}
+
+
+
+/* Vision & Mission Section */
+.vision-mission-section {
+  padding: 130px 0; /* مسافة فوق وتحت + من الجوانب */
+}
+
+.vision-box {
+  background-color: #002D62; /* كحلي غامق */
+  min-height: 400px;
+  text-align: right; /* الكلام لليمين */
+  border-radius: 10px 0 0 10px;
+  padding: 3rem 2rem; /* مسافة داخلية */
+}
+
+.mission-box {
+  background-color: #ffffff;
+  min-height: 400px;
+  text-align: right; /* الكلام لليمين */
+  border-radius: 0 10px 10px 0;
+  padding: 3rem 2rem; /* مسافة داخلية */
+}
+
+.vision-mission-section h2 {
+  font-size: 32px;
+}
+
+.text-v {
+  color: #c9c9c9;
+}
+
+.text-m {
+  color: #000000c2;
+}
+
+.vision-mission-section p,
+.vision-mission-section ul {
+  max-width: 90%;
+  line-height: 1.8;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .vision-box,
+  .mission-box {
+    border-radius: 10px; /* يخليها بزاوية دائرية عادية */
+    text-align: right;
+    padding: 2rem 1.5rem;
+  }
+
+  .vision-mission-section {
+    padding: 80px 20px; /* زودت padding يمين وشمال في الموبايل */
+  }
+
+  .vision-mission-section p,
+  .vision-mission-section ul {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .vision-mission-section {
+    padding: 190px 10px; /* padding أوضح في الشاشات الصغيرة */
+  }
+
+  .vision-mission-section h2 {
+    font-size: 26px;
+  }
+}
