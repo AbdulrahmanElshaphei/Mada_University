@@ -4,6 +4,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { VisionMissionComponent } from './pages/vision-mission/vision-mission.component';
 import { TeamComponent } from './pages/team/team.component';
 import { CredentialingComponent } from './pages/credentialing/credentialing.component';
+import { ProfAcademicComponent } from './pages/prof-academic/prof-academic.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: "home", pathMatch: "full" },
@@ -11,6 +12,7 @@ export const routes: Routes = [
     { path: 'vision_Mission', component: VisionMissionComponent },
     { path: 'team', component: TeamComponent },
     { path: 'credentialing', component: CredentialingComponent },
+    { path: 'ProfAcademic', component: ProfAcademicComponent },
     { path: "notFound", component: NotFoundComponent },
 
 

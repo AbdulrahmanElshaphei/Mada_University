@@ -1,0 +1,67 @@
+.text-content {
+  padding: 100px 0;
+  /* background-color: #eeeff0; */
+  background-image: linear-gradient(rgba(0, 45, 98, 0.65), rgba(0, 45, 98, 0.65)), url(../../../assets/images/shadows-made-by-daylight-city-with-architecture.webp);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.About-content p {
+  font-size: 18px;
+  color: #ffffff91;
+}
+
+.Aboutus {
+  position: relative;
+  color: #009447;
+}
+
+.Aboutus::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  font-size: 2em;
+  opacity: .1;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.About-content hr {
+  width: 40px;
+  border-top: 2px solid #009447;
+  margin: 0 auto 20px;
+  transition: all .3s;
+  margin-top: 20px;
+}
+
+.About-content:hover hr {
+  width: 80px;
+}
+
+.offer-section {
+  background: #f9f3e6;
+  border-top: 4px solid #c29f47;
+  border-bottom: 4px solid #c29f47;
+}
+
+.academic-landing{
+    padding: 130px 0 0 0;
+}
+
+.edit-textitle {
+    color: #009447;
+}
+
+.edit-textitle2{
+    color: #002D62;
+}
+
+@media (max-width: 576px) {
+  .academic-landing{
+    padding: 190px 0 0 0;
+}
+}

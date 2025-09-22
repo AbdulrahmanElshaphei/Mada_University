@@ -34,6 +34,6 @@ export class NavbarComponent {
 
 
   openLinkedin() {
-    window.open('https://www.linkedin.com/in/mada-university-155b36384/', '_blank');
+    window.open('https://www.linkedin.com/company/mada-university/', '_blank');
   }
 }

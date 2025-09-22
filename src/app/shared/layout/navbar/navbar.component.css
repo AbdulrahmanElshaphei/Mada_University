@@ -167,7 +167,7 @@
     font-size: 16px;
   }
   .navbar-nav {
-    gap: 1rem !important;
+    gap: 0.5rem !important;
   }
 }
 
